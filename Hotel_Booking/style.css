@@ -1,0 +1,498 @@
+/* reset code and common code starts here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    transition: .3s linear;
+    text-decoration: none;
+    text-transform: capitalize;
+    outline: 0;
+    font-weight: 400;
+}
+
+html{
+    
+    font-size: 62.5%;
+    /* overflow: hidden; */
+    /* scroll-behavior: smooth; */
+
+
+}
+
+:root{
+    --maincolor:#0000ff;
+}
+
+
+/* reset code and common code starts here */
+
+/* Conteiner Starts Here */
+
+/* Header Starts Here */
+
+.Header{
+
+    padding: 2rem 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 0.5rem 0.5rem rgb(0, 0, 0, .1);
+}
+
+/* Logo Starts Here */
+.Header #logo img{
+    width: 80px;
+}
+
+/* Logo Ends Here */
+
+/* navbar starts here */
+
+.Header .navbar a{
+    font-size: 1.7rem;
+    margin-left: 1.5rem;
+    color: var(--maincolor);
+
+}
+
+.Header .navbar a:hover{
+    color: black;
+}
+
+/* navbar ends here */
+
+/* Icons start here */
+.Header .icons{
+    font-size: 2rem;
+}
+
+.Header .icons div{
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.Header .icons div:hover{
+
+    color: var(--maincolor);
+}
+
+.Header .icons #menu-bars{
+    display: none;
+}
+
+.Header .search-box{
+
+    position: absolute;
+    top: 110%;
+    right: 100%;
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.Header .search-box input{
+
+    padding: 1.5rem;
+    border-radius: 15px;
+    width: 100%;
+    border: none;
+}
+
+.Header .search-box.active{
+    right: 2rem;
+}
+
+.Header .navbar.active{
+    left: 0;
+}
+
+/* Icons ends here */
+
+
+
+/* Header Ends Here */
+
+/* Background starts here */
+
+.main-background{
+
+    
+    background: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.main-text{
+    text-align: center;
+}
+.main-text h2{
+    color: white;
+    font-size: 30px;
+}
+.main-text h1{
+    color: white;
+    font-size: 38px;
+}
+.main-text h1 span{
+    color: var(--maincolor);
+} 
+/* Background ends here */
+
+/* Booking Starts here */
+.bg{
+
+    background: rgb(239,240,242);
+    background: -moz-radial-gradient(circle, rgba(239,240,242,0.7906512946975666) 0%, rgba(189,195,195,0.7710434515603116) 100%);
+    background: -webkit-radial-gradient(circle, rgba(239,240,242,0.7906512946975666) 0%, rgba(189,195,195,0.7710434515603116) 100%);
+    background: radial-gradient(circle, rgba(239,240,242,0.7906512946975666) 0%, rgba(189,195,195,0.7710434515603116) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eff0f2",endColorstr="#bdc3c3",GradientType=1);
+}
+.book-section{
+    
+    padding: 2rem 7%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inner-book{
+    width: 100%;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 40px;
+    background: #E6E6FA;
+
+
+    box-shadow: 10px 10px 5px lightblue;
+    }
+
+.inner-book-style{
+
+    height: 40px;
+    padding: 1rem 2rem;
+    margin: .5rem 0;
+    background: rgba(213, 247, 247, 0.15); 
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+.btn-grad {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .5s;
+    background-size: 200% auto;
+    color: #fff;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+
+.book-btn{
+    padding: 1.1rem 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .5s;
+    background-size: 200% auto;
+    color: #fff;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+
+.book-btn a{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.book-btn:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointera;
+}
+
+/* Booking Ends here */
+
+/* award winning Starts */
+
+
+
+.main-hotel{
+    padding: 2rem 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    
+}
+.award-winning-hotel h1{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    padding: 2rem ;
+}
+.award-winning-hotel h1 span{
+    color: var(--maincolor);
+}
+.inner-award{
+    flex: 1 1 300px;
+    
+}
+.inner-award:hover{
+    box-shadow: 10px 10px 10px 10px lightblue;
+    border-color: black;
+    border: .5rem;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+
+
+.inner-award h2,p{
+    text-align: center;
+}
+.inner-award h2{
+    font-size: 30px;
+    padding: 1rem;
+}
+.inner-award p{
+    font-size: 1.7rem;
+    padding: 2rem;
+}
+.inner-award img{
+    width: 100%;
+}
+
+
+/* award winning Ends */
+
+/* Room Start here */
+
+.our-rooms{
+    padding: 2rem 7%;
+
+}
+.our-rooms h1{
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 2rem;
+}
+.our-rooms h1 span{
+    color: var(--maincolor);
+}
+.inner-rooms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.inner-rooms .room-box{
+    flex: 1 1 300px;
+}
+
+
+.inner-rooms .room-box img{
+    width: 100%;
+    padding: 1rem;
+}
+.inner-rooms .room-box .beds{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+}
+.inner-rooms .room-box .beds span{
+    font-size: 1.7rem;
+}
+.inner-rooms .room-box .beds i{
+    font-size: 2rem;
+    color: var(--maincolor);
+    cursor: pointer;
+}
+.book-room-btn{
+    width: 50%;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    border: 1px solid var(--maincolor);
+    text-align: center;
+}
+.book-room-btn:hover{
+    color: white;
+    background: var(--maincolor);
+}
+.book-room-btn a{
+    color: black;
+    font-size: 1.7rem;
+}
+.book-room-btn a:hover{
+    color: white;
+}
+
+
+
+
+.inner-rooms .room-box:hover {
+
+        box-shadow: 10px 10px 10px 10px lightblue;
+        border-color: black;
+        border: .5rem;
+        cursor: pointer;
+        transition: 0.3s;
+
+        }
+
+ 
+
+/* Room Ens here */
+
+/* Second Room Start here */
+
+    .second-background{
+        background: url(images/secondback.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .second-background{
+        text-align: center;
+        
+    }
+    .second-background h1{
+        font-size: 60px;
+        font-weight: bolder;
+        color: white;
+    }
+    .second-background h2{
+        color: var(--maincolor);
+        font-size: 35px;
+        font-weight: bolder;
+    }
+/* Second Room End here */
+
+.gallery{
+    padding: 2rem 7%;
+
+}
+.gallery h1{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    padding: 2rem;
+}
+.gallery h1 span{
+    color: var(--maincolor);
+}
+.main-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.inner-gallery img{
+    width: 100%;
+}
+
+.inner-gallery:hover {
+
+    box-shadow: 10px 10px 10px 10px lightblue;
+    border-color: black;
+    border: .5rem;
+    cursor: pointer;
+    transition: 0.3s;
+
+    }
+
+/* our gallery Starts here */
+/* our gallery Ends here */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Screen size Max width:760px */
+
+@media(max-width:760px){
+    html{
+
+        font-size: 50%;
+    }
+
+    .Header .icons #menu-bars{
+        display: inline-block;
+    }
+
+    .Header{
+        padding: 2rem;
+    }
+
+    .Header .navbar{
+
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        right: 0;
+        background: var(--maincolor);
+        
+    }
+
+    .Header .navbar a{
+
+        display: block;
+        margin: 1rem;
+        padding: 1rem;
+        background: white;
+        border-radius: 10px;
+
+    }
+
+    .book-btn{
+        width: 100%;
+        margin-top: .5rem;
+     
+     }
+     .book-section{
+         padding: 2rem 0;
+     }
+
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel BOOKING</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+</head>
+<body>
+
+   
+        <!-- Header Starts here -->
+        <div class="Header">
+            <!-- Logo Starts here -->
+            <a href="#" id="logo"><img src="images/logo.png" alt=""></a>
+            <!-- Logo Ends here -->
+
+            <!-- Navbar Starts here -->
+            <nav class="navbar">
+                <a href="#">Home</a>
+                <a href="#">Bookings</a>
+                <a href="#">Gallary</a>
+                <a href="#">About</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </nav>
+
+            <!-- Navbar Ends here -->
+
+            <!-- Icons -->
+            <div class="icons">
+                <div class="fas fa-user" id="user"></div>
+                <div class="fas fa-search" id="serach-bar"></div>
+                <div class="fas fa-bars" id="menu-bars"></div>
+
+            </div>
+
+            <div class="search-box">
+                <input type="search" placeholder="search here">
+            </div>
+
+        </div>
+        <!-- Header Ends here -->
+
+        <!-- Background starts here -->
+        <div class="main-background">
+            <div class="main-text">
+                <h2>perfection</h2>
+            <h1>and you are <span>invited</span></h1>
+            </div>
+            
+            </div> 
+        <!-- Background ends here -->
+
+        <!-- booking secton -->
+     <div class="bg">
+
+        <div class="book-section  ">
+            <div class="inner-book">
+                <form >
+                    <select required class="inner-book-style">
+                        <option value="" disabled selected>Whare are you going?</option>
+                        <option value="Dhaka">Dhaka</option>
+                        <option value="Chittagong">Chittagong</option>
+                        <option value="Sylhet">Sylhet</option>
+                        <option value="Badhorban">Badhorban</option>
+                        <option value="Rangamati">Rangamati</option>
+                        <option value="Khulna">Dinajpur</option>
+                        <option value="Dinajpur">Two</option>
+                        <option value="Dinajpur">Dinajpur</option>                     
+                    </select>
+
+                    
+                    <input type="text" class="inner-book-style" name="check-in-date" placeholder="check-in-date" onclick="this.type = 'datetime-local'">
+                    <input type="text" class="inner-book-style" name="check-out-date" placeholder="check-out-date" onclick="this.type = 'datetime-local'">
+                
+                    
+
+                    <select required class="inner-book-style">
+                        <option value="" disabled selected>Adult-Children</option>
+                        <option value="Adult">Adult</option>
+                        <option value="Children">Children</option>
+                        
+                    </select>
+
+                    <input type="text" class="inner-book-style"  name="number" placeholder="Total Room" onclick="this.type = 'number'" onclick="increaseValue()">
+
+                </form >
+
+
+                <button class="book-btn" style="background-image: linear-gradient(to right, #003973 0%, #E5E5BE  51%, #003973  100%)" data-color1="#003973" data-color2="#E5E5BE">
+                    <a href="#">book now</a>
+                  </button>
+
+
+
+                
+            </div>
+            
+        </div>
+        <!-- booking secton ended -->
+
+        <!-- award winning Starts -->
+
+        <div class="award-winning-hotel ">
+            <h1>award <span>winning</span> hotels</h1>
+            <div class="main-hotel">
+                <div class="inner-award">
+                    <img src="images/award1.png" alt="">
+                    <h2>middle town</h2>
+                    <p>We fill the space content. High-quality, beautiful, solid and pleasant to the touch. Furniture and decoration of concrete? You to us.</p>
+                </div>
+
+                <div class="inner-award">
+                    <img src="images/award 2.png" alt="">
+                    <h2>middle town</h2>
+                    <p>We fill the space content. High-quality, beautiful, solid and pleasant to the touch. Furniture and decoration of concrete? You to us.</p>
+                </div>
+                <div class="inner-award">
+                    <img src="images/award 3.png" alt="">
+                    <h2>middle town</h2>
+                    <p>We fill the space content. High-quality, beautiful, solid and pleasant to the touch. Furniture and decoration of concrete? You to us.</p>
+                </div>   
+                <div class="inner-award">
+                    <img src="images/award4.png" alt="">
+                    <h2>middle town</h2>
+                    <p>We fill the space content. High-quality, beautiful, solid and pleasant to the touch. Furniture and decoration of concrete? You to us.</p>
+                </div> 
+                
+                <div class="inner-award">
+                    <img src="images/award5.png" alt="">
+                    <h2>middle town</h2>
+                    <p>We fill the space content. High-quality, beautiful, solid and pleasant to the touch. Furniture and decoration of concrete? You to us.</p>
+                </div>  
+                <div class="inner-award">
+                    <img src="images/award6.png" alt="">
+                    <h2>middle town</h2>
+                    <p>We fill the space content. High-quality, beautiful, solid and pleasant to the touch. Furniture and decoration of concrete? You to us.</p>
+                </div>                  
+            </div>
+        </div>
+
+        <!-- award winning ended -->
+
+        <!-- Room Starts here -->
+
+        <div class="our-rooms ">
+            <h1>Our <span>rooms</span></h1>
+            <div class="inner-rooms">
+                <div class="room-box">
+                    <img src="images/award1.png" alt="">
+                    <div class="beds">
+                        <span>1 bed</span><i class="fas fa-bed"></i>
+                    </div>
+                    <button class="book-btn book-room-btn" style="background-image: linear-gradient(to right, #003973 0%, #E5E5BE  51%, #003973  100%)" data-color1="#003973" data-color2="#E5E5BE">
+                        <a href="#">Book now</a>
+                      </button>
+                </div>
+     
+                <div class="room-box">
+                 <img src="images/award1.png" alt="">
+                 <div class="beds">
+                     <span>1 bed</span><i class="fas fa-bed"></i>
+                 </div>
+                 <button class="book-btn book-room-btn" style="background-image: linear-gradient(to right, #003973 0%, #E5E5BE  51%, #003973  100%)" data-color1="#003973" data-color2="#E5E5BE">
+                    <a href="#">Book now</a>
+                  </button>
+             </div>
+     
+             <div class="room-box">
+                 <img src="images/award1.png" alt="">
+                 <div class="beds">
+                     <span>1 bed</span><i class="fas fa-bed"></i>
+                 </div>
+
+                     <button class="book-btn book-room-btn" style="background-image: linear-gradient(to right, #003973 0%, #E5E5BE  51%, #003973  100%)" data-color1="#003973" data-color2="#E5E5BE">
+                        <a href="#">Book now</a>
+                      </button>
+        
+                 
+             </div>
+            </div>
+        </div>
+    </div>
+     
+        <!-- Room Ends here -->
+
+        <!-- Second Room Start here -->
+
+        <div class="second-background">
+            <div class="second-text">
+                <h1>winter</h1>
+                <h2>weather</h2>
+            </div>
+        </div>
+        
+
+        <!-- Second Room End here -->
+
+        <!-- our gallery Starts here -->
+
+        <div class="gallery bg">
+            <h1>Our <span>gallery</span></h1>
+            <div class="main-gallery">
+                <div class="inner-gallery">
+                    <img src="images/award1.png" alt="">
+                </div>
+
+                <div class="inner-gallery">
+                    <img src="images/award1.png" alt="">
+                </div>
+                
+                <div class="inner-gallery">
+                    <img src="images/award1.png" alt="">
+                </div>
+                
+                <div class="inner-gallery">
+                    <img src="images/award1.png" alt="">
+                </div>
+                
+                <div class="inner-gallery">
+                    <img src="images/award1.png" alt="">
+                </div>
+                
+                <div class="inner-gallery">
+                    <img src="images/award1.png" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- our gallery Ends here -->
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>    
